@@ -30,5 +30,7 @@ A generator plugin for obsidian for TTRPGs that currently only generates NPCs. A
 # Future Features:
 - I'll try to fix the NPC tokens issue but this is my first ever obsidian plugin so it may take a bit
 - A potential shop generator because justbizns on the obsidian TTRPG discord pointed out that with some modifications, it can be used for that as well
+- Better statblocks that change depending on the class of the NPC
+- (This is still incredibly hypothetical and way down the line but is something i'd like to have) Some way to have the image change based on species, class, gender etc.
 
 If you want to reach me, my discord username is redreaper_21
