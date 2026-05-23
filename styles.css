@@ -1,0 +1,610 @@
+/* ================================================================
+   NPC INDEX — SHARED BASE
+   Root element used by both the sidebar view and inline codeblocks.
+   ================================================================ */
+
+/* Sidebar ItemView container */
+.npc-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Shared root for all index instances */
+.npc-index-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--background-primary);
+  box-sizing: border-box;
+}
+
+/* Embedded in a note (codeblock) */
+.npc-index-embedded {
+  height: auto;
+  min-height: 180px;
+  max-height: 60vh;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Codeblock outer wrapper — fills the rendered code block */
+.npc-codeblock-wrapper {
+  width: 100%;
+  min-height: 180px;
+}
+
+/* ── Layout mode classes ─────────────────────────────────────── */
+/* Applied by JS as view mode changes */
+.npc-index--table .npc-content { display: flex; flex-direction: column; }
+.npc-index--cards .npc-content { display: flex; flex-direction: column; }
+
+/* ── Old alias kept for backward compat ─────────────────────── */
+.npc-table-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--background-primary);
+}
+
+/* ── Toolbar ─────────────────────────────────────────────────── */
+
+.npc-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  flex-shrink: 0;
+  background: var(--background-secondary);
+  min-width: 0;
+  overflow: hidden;
+}
+
+.npc-search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.npc-search-icon {
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-faint);
+  font-size: 10px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.npc-search-input {
+  width: 100%;
+  padding: 4px 8px 4px 22px;
+  border-radius: 5px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-size: var(--font-ui-smaller);
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.npc-search-input:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 15%, transparent);
+}
+.npc-search-input::placeholder { color: var(--text-faint); }
+
+.npc-count {
+  font-size: 10px;
+  color: var(--text-faint);
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* View toggle button */
+.npc-view-toggle {
+  flex-shrink: 0;
+  padding: 3px 6px;
+  border-radius: 5px;
+  border: 1px solid var(--background-modifier-border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+.npc-view-toggle:hover {
+  color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+  background: color-mix(in srgb, var(--interactive-accent) 8%, transparent);
+}
+
+.npc-generate-btn {
+  flex-shrink: 0;
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--interactive-accent);
+  background: color-mix(in srgb, var(--interactive-accent) 10%, transparent);
+  color: var(--interactive-accent);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.npc-generate-btn:hover {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  box-shadow: 0 2px 6px color-mix(in srgb, var(--interactive-accent) 30%, transparent);
+}
+.npc-generate-btn:active { transform: scale(0.95); }
+
+/* ── Content area — fills remaining space ────────────────────── */
+
+.npc-content {
+  flex: 1;
+  min-height: 0;    /* critical: lets flex child shrink below its content size */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Table wrapper — NO horizontal scroll ────────────────────── */
+/*
+   The key rule: overflow: hidden, not auto.
+   The table uses table-layout: fixed + a colgroup, so columns
+   are sized by percentage of the container width. Long values
+   are clipped with ellipsis inside the td. The table can never
+   be wider than its container.
+*/
+.npc-table-wrap {
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;   /* never horizontal scroll */
+  overflow-y: auto;     /* vertical scroll when needed */
+  scrollbar-width: thin;
+  scrollbar-color: var(--background-modifier-border) transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Table ───────────────────────────────────────────────────── */
+
+.npc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-ui-smaller);
+  /* fixed: column widths come from colgroup, not content */
+  table-layout: fixed;
+}
+
+/* Header */
+
+.npc-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--background-secondary);
+}
+
+.npc-th {
+  padding: 0;
+  border-bottom: 2px solid color-mix(in srgb, var(--interactive-accent) 40%, var(--background-modifier-border));
+  text-align: left;
+  /* Clip header labels too — no header forces width */
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.npc-th-inner {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 5px 6px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  transition: color 0.12s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.npc-th:hover .npc-th-inner { color: var(--text-normal); }
+.npc-th-sorted .npc-th-inner { color: var(--interactive-accent); }
+
+.npc-sort-arrow {
+  font-size: 8px;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+.npc-th-sorted .npc-sort-arrow { opacity: 1; }
+
+/* Rows */
+
+.npc-table tbody tr.npc-row {
+  border-bottom: 1px solid var(--background-modifier-border);
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+.npc-table tbody tr.npc-row:hover { background: var(--background-modifier-hover); }
+.npc-table tbody tr.npc-row:last-child { border-bottom: none; }
+
+/* Zebra stripe */
+.npc-table tbody tr.npc-row:nth-child(even) {
+  background: color-mix(in srgb, var(--background-secondary) 40%, transparent);
+}
+.npc-table tbody tr.npc-row:nth-child(even):hover { background: var(--background-modifier-hover); }
+
+/* Cells — must clip, never expand column */
+.npc-td {
+  padding: 5px 6px;
+  vertical-align: middle;
+  color: var(--text-normal);
+  /* These three together prevent any cell from expanding its column: */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Ensure the cell respects the colgroup width */
+  max-width: 0;
+}
+
+.npc-table tbody tr .npc-td:first-child {
+  font-weight: 600;
+}
+
+.npc-td-editable { position: relative; }
+.npc-td-editable:hover::after {
+  content: '✎';
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 9px;
+  color: var(--text-faint);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Plot relevance badges */
+.npc-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 8px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.npc-badge--y,
+.npc-badge--yes {
+  background: color-mix(in srgb, var(--color-green, #4caf50) 20%, transparent);
+  color: var(--color-green, #4caf50);
+  border: 1px solid color-mix(in srgb, var(--color-green, #4caf50) 40%, transparent);
+}
+.npc-badge--n,
+.npc-badge--no {
+  background: color-mix(in srgb, var(--background-modifier-border) 50%, transparent);
+  color: var(--text-faint);
+  border: 1px solid var(--background-modifier-border);
+}
+.npc-badge--yn,
+.npc-badge-- {
+  background: color-mix(in srgb, var(--color-yellow, #ffb300) 15%, transparent);
+  color: var(--color-yellow, #ffb300);
+  border: 1px solid color-mix(in srgb, var(--color-yellow, #ffb300) 35%, transparent);
+}
+
+.npc-empty-row { pointer-events: none; }
+.npc-empty-cell {
+  text-align: center;
+  padding: 32px 12px;
+  color: var(--text-faint);
+  font-style: italic;
+  font-size: var(--font-ui-smaller);
+}
+
+/* ── Card list view ──────────────────────────────────────────── */
+
+.npc-card-list-wrap {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--background-modifier-border) transparent;
+}
+
+.npc-card-list {
+  padding: 4px;
+}
+
+.npc-card {
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--background-modifier-border);
+  transition: background 0.1s ease;
+}
+.npc-card:last-child { border-bottom: none; }
+.npc-card:hover { background: var(--background-modifier-hover); }
+
+.npc-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-width: 0;
+}
+
+.npc-card-name {
+  font-size: var(--font-ui-small);
+  font-weight: 600;
+  color: var(--text-normal);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}
+.npc-card-meta {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-faint);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Badge in card view is right-click editable */
+.npc-card .npc-badge {
+  cursor: context-menu;
+  transition: filter 0.12s ease, box-shadow 0.12s ease;
+}
+.npc-card .npc-badge:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 25%, transparent);
+}
+
+.npc-col-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 6px 12px;
+  padding: 8px 0 12px;
+}
+
+.npc-col-row {
+  display: flex;
+  align-items: center;
+}
+.npc-col-row label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-ui-small);
+  cursor: pointer;
+  color: var(--text-normal);
+}
+.npc-col-row input[type="checkbox"] { cursor: pointer; }
+.npc-col-row input[type="checkbox"]:disabled { opacity: 0.4; cursor: default; }
+
+
+/* ================================================================
+   NPC SETTINGS TAB
+   ================================================================ */
+
+.npc-settings {
+  max-width: 780px;
+}
+
+.npc-settings-section-header {
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  font-size: var(--font-ui-medium);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Inline index tip box */
+.npc-tip-box {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+}
+.npc-tip-box p { margin: 4px 0; }
+.npc-tip-sub   { font-size: var(--font-ui-smaller) !important; color: var(--text-faint) !important; margin-top: 8px !important; }
+
+.npc-tip-code {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin: 6px 0 0;
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  white-space: pre;
+  overflow-x: auto;
+}
+.npc-tip-code code { background: none; border: none; padding: 0; color: var(--text-accent, var(--interactive-accent)); }
+
+.npc-token-list {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+.npc-token-list code {
+  font-size: 0.9em;
+  word-break: break-all;
+  color: var(--text-accent, var(--interactive-accent));
+}
+
+.npc-template-textarea {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller) !important;
+  width: 100%;
+  min-width: 400px;
+}
+
+/* Add category row */
+.npc-add-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.npc-cat-name-input {
+  flex: 1;
+  min-width: 160px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-size: var(--font-ui-small);
+}
+.npc-cat-name-input:focus { outline: none; border-color: var(--interactive-accent); }
+
+.npc-add-btn { margin-left: auto; }
+
+/* Category collapsible */
+.npc-category-details {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.15s ease;
+}
+.npc-category-details[open] {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.npc-category-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--font-ui-small);
+  background: var(--background-secondary);
+  user-select: none;
+  list-style: none;
+}
+.npc-category-summary::-webkit-details-marker { display: none; }
+.npc-category-summary::before { content: '▶'; font-size: 9px; margin-right: 8px; opacity: 0.5; transition: transform 0.15s ease; }
+.npc-category-details[open] .npc-category-summary::before { transform: rotate(90deg); }
+.npc-category-summary:hover { background: var(--background-modifier-hover); }
+
+.npc-category-meta {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-faint);
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: 6px;
+}
+
+.npc-category-editor { padding: 10px 14px 14px; }
+
+/* Item list */
+.npc-items-list { margin-bottom: 8px; max-height: 260px; overflow-y: auto; }
+
+.npc-item-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--background-modifier-border) 40%, transparent);
+}
+.npc-item-row:last-child { border-bottom: none; }
+
+.npc-item-name {
+  flex: 2;
+  padding: 3px 7px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: var(--font-ui-smaller);
+  background: transparent;
+  color: var(--text-normal);
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.npc-item-name:hover { border-color: var(--background-modifier-border); background: var(--background-secondary); }
+.npc-item-name:focus { outline: none; border-color: var(--interactive-accent); background: var(--background-secondary); }
+.npc-item-name--full { flex: 1; }
+
+.npc-item-weight {
+  width: 64px;
+  flex-shrink: 0;
+  padding: 3px 6px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: var(--font-ui-smaller);
+  background: transparent;
+  color: var(--text-normal);
+  text-align: right;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.npc-item-weight:hover { border-color: var(--background-modifier-border); background: var(--background-secondary); }
+.npc-item-weight:focus { outline: none; border-color: var(--interactive-accent); background: var(--background-secondary); }
+
+.npc-item-remove {
+  flex-shrink: 0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0.4;
+  transition: opacity 0.12s ease, color 0.12s ease;
+  cursor: pointer;
+}
+.npc-item-remove:hover { opacity: 1; color: var(--text-error); }
+
+/* Add item row */
+.npc-add-item-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--background-modifier-border);
+}
+
+.npc-add-item-btn {
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: var(--font-ui-smaller);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.npc-delete-category {
+  margin-top: 12px;
+  font-size: var(--font-ui-smaller);
+  opacity: 0.7;
+  transition: opacity 0.12s ease;
+}
+.npc-delete-category:hover { opacity: 1; }

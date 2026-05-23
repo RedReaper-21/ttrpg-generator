@@ -1,0 +1,1420 @@
+{
+  "categories": {
+    "Male First Names": {
+      "type": "list",
+      "items": [
+        "Abel",
+        "Adam",
+        "Aiden",
+        "Alaric",
+        "Alastair",
+        "Albion",
+        "Aldrich",
+        "Alfred",
+        "Andreas",
+        "Arthur",
+        "Baldric",
+        "Barton",
+        "Baxter",
+        "Beorn",
+        "Bob",
+        "Bryan",
+        "Bucky",
+        "Cain",
+        "Carter",
+        "Casper",
+        "Caspian",
+        "Cassian",
+        "Cedric",
+        "Charles",
+        "Connor",
+        "Darian",
+        "Declan",
+        "Dominic",
+        "Eadric",
+        "Eamon",
+        "Edmond",
+        "Eren",
+        "Erik",
+        "Ethan",
+        "Ethelred",
+        "Fanthen",
+        "Finn",
+        "Finnian",
+        "Franklin",
+        "Garnt",
+        "Garrett",
+        "George",
+        "Gideon",
+        "Godric",
+        "Grimm",
+        "Hadrian",
+        "Harry",
+        "Harvey",
+        "Henri",
+        "Horatio",
+        "Igor",
+        "Ivo",
+        "Ivor",
+        "Jareth",
+        "Jasper",
+        "Jerome",
+        "John",
+        "Jorje",
+        "Julian",
+        "Kael",
+        "Khan",
+        "Leo",
+        "Leofric",
+        "Leon",
+        "Leoric",
+        "Levi",
+        "Liam",
+        "Loras",
+        "Luke",
+        "Luther",
+        "Magnus",
+        "Matthew",
+        "Merlin",
+        "Michael",
+        "Milo",
+        "Nate",
+        "Nathaniel",
+        "Nova",
+        "Orik",
+        "Owen",
+        "Percival",
+        "Quinn",
+        "Ragnar",
+        "Raphael",
+        "Roderick",
+        "Roman",
+        "Ronald",
+        "Rowan",
+        "Rupert",
+        "Rutherford",
+        "Salvor",
+        "Samuel",
+        "Sebastian",
+        "Sigurd",
+        "Silas",
+        "Steven",
+        "Thaddeus",
+        "Theodoric",
+        "Thorin",
+        "Thrain",
+        "Tim",
+        "Ulric",
+        "Valen",
+        "Varian",
+        "Vesper",
+        "Viktor",
+        "Weston",
+        "Wilson",
+        "Wulfric",
+        "Xalvador",
+        "Xavier",
+        "Yorick",
+        "Zachary",
+        "Zephyrus"
+      ]
+    },
+    "Female First Names": {
+      "type": "list",
+      "items": [
+        "Aelith",
+        "Aethelflaed",
+        "Alianor",
+        "Anastasia",
+        "Anna",
+        "Ariadne",
+        "Astraea",
+        "Astrid",
+        "Aurora",
+        "Autumn",
+        "Ava",
+        "Belinda",
+        "Belladonna",
+        "Belphoebe",
+        "Bianca",
+        "Brynna",
+        "Cadence",
+        "Caelia",
+        "Calanthe",
+        "Callie",
+        "Calliope",
+        "Camellia",
+        "Candace",
+        "Cassandra",
+        "Catherine",
+        "Catriona",
+        "Cheryl",
+        "Chrys",
+        "Cinna",
+        "Dawn",
+        "Deborah",
+        "Drusilla",
+        "Eirwen",
+        "Eive",
+        "Elowen",
+        "Elsa",
+        "Esme",
+        "Eve",
+        "Fiora",
+        "Freya",
+        "Gem",
+        "Genevieve",
+        "Ginny",
+        "Guinevere",
+        "Gwendolyn",
+        "Gwyneth",
+        "Hermione",
+        "Iris",
+        "Isolde",
+        "Ivy",
+        "Jessamine",
+        "Jezabel",
+        "Jian",
+        "Karen",
+        "Katarina",
+        "Kathelynn",
+        "Kelly",
+        "Lilith",
+        "Lily",
+        "Liora",
+        "Luna",
+        "Lyra",
+        "Madrigal",
+        "Maeve",
+        "Mary",
+        "May",
+        "Monica",
+        "Morgana",
+        "Nikki",
+        "Nyssa",
+        "Ophelia",
+        "Persephone",
+        "Pixal",
+        "Quintessa",
+        "Rhiannon",
+        "Sabine",
+        "Samarah",
+        "Sandra",
+        "Sara",
+        "Seraphina",
+        "Serena",
+        "Sigrid",
+        "Sora",
+        "Tamisin",
+        "Thyra",
+        "Ursula",
+        "Valeria",
+        "Vesper",
+        "Willow",
+        "Wren",
+        "Xanthe",
+        "Ysolt",
+        "Yvaine",
+        "Zinnia",
+        "Zoe"
+      ]
+    },
+    "Non-Binary First Names": {
+      "type": "list",
+      "items": [
+        "Aerin",
+        "Alex",
+        "Blair",
+        "Brook",
+        "Cassidy",
+        "Charlie",
+        "Dakota",
+        "Darcy",
+        "Echo",
+        "Emery",
+        "Finley",
+        "Foggy",
+        "Harper",
+        "Indigo",
+        "Jordan",
+        "Kai",
+        "Linden",
+        "Mal",
+        "Marlowe",
+        "Morgan",
+        "Onyx",
+        "Phoenix",
+        "Quinn",
+        "Raven",
+        "Reese",
+        "Riley",
+        "Robin",
+        "Rowan",
+        "Rune",
+        "Sable",
+        "Sage",
+        "Sam",
+        "Sasha",
+        "Shale",
+        "Skyler",
+        "Talon",
+        "Taryn",
+        "Taylor",
+        "Vesper",
+        "Wren",
+        "Xion",
+        "Zephyr"
+      ]
+    },
+    "Last Names": {
+      "type": "list",
+      "items": [
+        "Abernath",
+        "Albetruss",
+        "Ashford",
+        "Bane",
+        "Berkley",
+        "Blackthorn",
+        "Blackwood",
+        "Boltsman",
+        "Briant",
+        "Brightmoon",
+        "Brightspark",
+        "Cahill",
+        "Castle",
+        "Castleford",
+        "Cole",
+        "Danton",
+        "Darkwater",
+        "Dawnbringer",
+        "Dragoncrest",
+        "Dragonhart",
+        "Duskendale",
+        "Eisley",
+        "Emberfall",
+        "Erikson",
+        "Fairchild",
+        "Fairman",
+        "Feynmans",
+        "Fickleback",
+        "Fisk",
+        "Forestfoot",
+        "Freeport",
+        "Frostbane",
+        "Frostspire",
+        "Frostwind",
+        "Gallow",
+        "Goldenhoard",
+        "Goldenshield",
+        "Granger",
+        "Graves",
+        "Grayson",
+        "Grimshaw",
+        "Hanondorf",
+        "Harmon",
+        "Havenhart",
+        "Hawthorn",
+        "Hawthorne",
+        "Hightower",
+        "Ironoak",
+        "Ironwood",
+        "Jackman",
+        "Kennedy",
+        "Kingsley",
+        "Kormack",
+        "Lightweaver",
+        "Lockwood",
+        "Lutharian",
+        "Marigold",
+        "Moonshadow",
+        "Mulaney",
+        "Murdock",
+        "Nightshade",
+        "North",
+        "Oakenshield",
+        "Page",
+        "Pike",
+        "Powell",
+        "Ravencrest",
+        "Ravenfield",
+        "Ravenscar",
+        "Reacher",
+        "Rockfell",
+        "Rockfeller",
+        "Schnauder",
+        "Shackley",
+        "Shadowend",
+        "Shamrock",
+        "Silverbrook",
+        "Silverleaf",
+        "Spivot",
+        "Starwhisper",
+        "Sterling",
+        "Stonefist",
+        "Stonehelm",
+        "Stormcrown",
+        "Stormrider",
+        "Torrent",
+        "Wayne",
+        "Whitethorn",
+        "Windrider",
+        "Winterbourne",
+        "Wolfe",
+        "Wolfsbane",
+        "Wyvernspur"
+      ]
+    },
+    "Species": {
+      "type": "weighted",
+      "items": [
+        [
+          "Aasimar",
+          1
+        ],
+        [
+          "Changeling",
+          1
+        ],
+        [
+          "Dragonborn",
+          5
+        ],
+        [
+          "Dwarf",
+          15
+        ],
+        [
+          "Elf",
+          1
+        ],
+        [
+          "Firbolg",
+          2
+        ],
+        [
+          "Genasi",
+          1
+        ],
+        [
+          "Gnome",
+          5
+        ],
+        [
+          "Goliath",
+          3
+        ],
+        [
+          "Half-Elf",
+          15
+        ],
+        [
+          "Halfling",
+          25
+        ],
+        [
+          "Human",
+          50
+        ],
+        [
+          "Kenku",
+          2
+        ],
+        [
+          "Loxodon",
+          1
+        ],
+        [
+          "Orc",
+          10
+        ],
+        [
+          "Tabaxi",
+          2
+        ],
+        [
+          "Tiefling",
+          10
+        ],
+        [
+          "Triton",
+          2
+        ],
+        [
+          "Vampire",
+          1
+        ],
+        [
+          "Warforged",
+          15
+        ]
+      ]
+    },
+    "Alignments": {
+      "type": "weighted",
+      "items": [
+        [
+          "Chaotic Evil",
+          3
+        ],
+        [
+          "Chaotic Good",
+          15
+        ],
+        [
+          "Chaotic Neutral",
+          15
+        ],
+        [
+          "Jerk",
+          10
+        ],
+        [
+          "Lawful Evil",
+          5
+        ],
+        [
+          "Lawful Good",
+          20
+        ],
+        [
+          "Lawful Neutral",
+          20
+        ],
+        [
+          "Neutral Evil",
+          4
+        ],
+        [
+          "Neutral Good",
+          35
+        ],
+        [
+          "True Neutral",
+          45
+        ]
+      ]
+    },
+    "Personality Traits": {
+      "type": "list",
+      "items": [
+        "Aloof",
+        "Ambitious",
+        "Atheistic",
+        "Boastful",
+        "Brave",
+        "Cautious",
+        "Charismatic",
+        "Content",
+        "Cowardly",
+        "Curious",
+        "Disinterested",
+        "Dour",
+        "Friendly",
+        "Greedy",
+        "Humble",
+        "Loyal",
+        "Methodical",
+        "Naive",
+        "Optimistic",
+        "Pessimistic",
+        "Pious",
+        "Playful",
+        "Reckless",
+        "Sarcastic",
+        "Selfless",
+        "Serious",
+        "Shy",
+        "Stingy",
+        "Suspicious",
+        "Timid",
+        "Trusting",
+        "Untrustworthy",
+        "Witty",
+        "World-weary"
+      ]
+    },
+    "Motivations": {
+      "type": "list",
+      "items": [
+        "Arcane Mastery",
+        "Artistic Creation",
+        "Criminal Enterprise",
+        "Debt Repayment",
+        "Escape Past",
+        "Family Honor",
+        "Find Redemption",
+        "Immortality",
+        "Knowledge",
+        "Love",
+        "Military Conquest",
+        "Natural Balance",
+        "Personal Fulfilment",
+        "Personal Legacy",
+        "PLOT RELEVANT",
+        "Political Ambition",
+        "Power",
+        "Protect a loved one",
+        "Redemption",
+        "Religious Zeal",
+        "Revenge",
+        "Scientific Discovery",
+        "Social Reform",
+        "Spiritual Enlightenment",
+        "Survival",
+        "Technological Advancement",
+        "Wealth"
+      ]
+    },
+    "Classes": {
+      "type": "weighted",
+      "items": [
+        [
+          "Artificer",
+          4
+        ],
+        [
+          "Barbarian",
+          8
+        ],
+        [
+          "Bard",
+          8
+        ],
+        [
+          "Blood Hunter",
+          3
+        ],
+        [
+          "Cleric",
+          10
+        ],
+        [
+          "Commoner",
+          75
+        ],
+        [
+          "Death",
+          0.0001
+        ],
+        [
+          "Demonhunter",
+          5
+        ],
+        [
+          "Druid",
+          7
+        ],
+        [
+          "Echo Knight",
+          2
+        ],
+        [
+          "Fate Weaver",
+          1
+        ],
+        [
+          "Fighter",
+          15
+        ],
+        [
+          "Gunslinger",
+          8
+        ],
+        [
+          "Monk",
+          7
+        ],
+        [
+          "Paladin",
+          7
+        ],
+        [
+          "Ranger",
+          7
+        ],
+        [
+          "Rogue",
+          12
+        ],
+        [
+          "Samurai",
+          5
+        ],
+        [
+          "Sorcerer",
+          6
+        ],
+        [
+          "Spellblade",
+          7
+        ],
+        [
+          "Warlock",
+          6
+        ],
+        [
+          "Wizard",
+          12
+        ]
+      ]
+    },
+    "Occupations": {
+      "type": "weighted",
+      "items": [
+        [
+          "Alchemist",
+          3
+        ],
+        [
+          "Arcane Scholar",
+          2
+        ],
+        [
+          "Baker",
+          5
+        ],
+        [
+          "Bard",
+          3
+        ],
+        [
+          "Blacksmith",
+          10
+        ],
+        [
+          "Carpenter",
+          4
+        ],
+        [
+          "Cartographer",
+          2
+        ],
+        [
+          "Cook",
+          8
+        ],
+        [
+          "Cultist",
+          1
+        ],
+        [
+          "Demon's Servant",
+          5
+        ],
+        [
+          "Farmer",
+          20
+        ],
+        [
+          "Guard",
+          12
+        ],
+        [
+          "Hag's Apprentice",
+          0.5
+        ],
+        [
+          "Healer",
+          8
+        ],
+        [
+          "Herbalist",
+          4
+        ],
+        [
+          "Hitman",
+          1
+        ],
+        [
+          "Hunter",
+          6
+        ],
+        [
+          "Librarian",
+          5
+        ],
+        [
+          "Merchant",
+          35
+        ],
+        [
+          "Miner",
+          5
+        ],
+        [
+          "Noble",
+          7
+        ],
+        [
+          "Priest",
+          7
+        ],
+        [
+          "Sailor",
+          8
+        ],
+        [
+          "Scholar",
+          7
+        ],
+        [
+          "Scientist",
+          25
+        ],
+        [
+          "Thief",
+          10
+        ],
+        [
+          "Traveller",
+          45
+        ]
+      ]
+    },
+    "Hair Colors": {
+      "type": "list",
+      "items": [
+        "Amethyst",
+        "Auburn",
+        "Black",
+        "Blonde",
+        "Blue",
+        "Bronze",
+        "Brown",
+        "Chestnut",
+        "Copper",
+        "Coral Blue",
+        "Emerald",
+        "Fiery Red",
+        "Frosted Tips",
+        "Green",
+        "Honey Blonde",
+        "Jet Black",
+        "Midnight Blue",
+        "Pink",
+        "Platinum",
+        "Rainbow",
+        "Raven",
+        "Red",
+        "Salt-and-Pepper",
+        "Sapphire",
+        "Silver",
+        "Steel Gray",
+        "White"
+      ]
+    },
+    "Hair Styles": {
+      "type": "list",
+      "items": [
+        "Afro",
+        "Asymmetrical",
+        "Bald",
+        "Bearded",
+        "Braided",
+        "Chignon",
+        "Curly",
+        "Double Braids",
+        "Dreadlocks",
+        "Elaborate Braids",
+        "Faux Hawk",
+        "Liberty Spikes",
+        "Long",
+        "Messy Bun",
+        "Mohawk",
+        "Mullet",
+        "Pageboy",
+        "Ponytail",
+        "Samurai Knot",
+        "Short",
+        "Side Shave",
+        "Straight",
+        "Top-Knot",
+        "Undercut",
+        "Victorian Updo"
+      ]
+    },
+    "Eye Colors": {
+      "type": "weighted",
+      "items": [
+        [
+          "Amber",
+          5
+        ],
+        [
+          "Black",
+          3
+        ],
+        [
+          "Blue",
+          25
+        ],
+        [
+          "Brown",
+          35
+        ],
+        [
+          "Gold",
+          2
+        ],
+        [
+          "Green",
+          15
+        ],
+        [
+          "Grey",
+          8
+        ],
+        [
+          "Hazel",
+          12
+        ],
+        [
+          "Heterochromatic",
+          1
+        ],
+        [
+          "Red",
+          1
+        ],
+        [
+          "Silver",
+          1
+        ],
+        [
+          "Violet",
+          0.5
+        ],
+        [
+          "Yellow",
+          1
+        ]
+      ]
+    },
+    "Features": {
+      "type": "weighted",
+      "items": [
+        [
+          "Acid scars across the face",
+          2
+        ],
+        [
+          "Birthmark",
+          15
+        ],
+        [
+          "Burn marks",
+          7
+        ],
+        [
+          "Claw marks",
+          4
+        ],
+        [
+          "Crystal growths",
+          1
+        ],
+        [
+          "Facial brand",
+          3
+        ],
+        [
+          "Feathers in hair",
+          3
+        ],
+        [
+          "Glowing tattoos",
+          2
+        ],
+        [
+          "Golden eyes",
+          5
+        ],
+        [
+          "Golden fingernails",
+          2
+        ],
+        [
+          "Heterochromia",
+          4
+        ],
+        [
+          "Mirrored Sunglasses",
+          5
+        ],
+        [
+          "Missing tooth",
+          10
+        ],
+        [
+          "Nothing",
+          40
+        ],
+        [
+          "Petrified hand",
+          1
+        ],
+        [
+          "Piercings",
+          8
+        ],
+        [
+          "Prosthetic limb",
+          3
+        ],
+        [
+          "Ritual scars",
+          6
+        ],
+        [
+          "Scar across eye",
+          15
+        ],
+        [
+          "Silver hair streak",
+          4
+        ],
+        [
+          "Snake-like eyes",
+          2
+        ],
+        [
+          "Tattooed arms",
+          12
+        ]
+      ]
+    },
+    "Inventory Items": {
+      "type": "weighted",
+      "items": [
+        [
+          "Ancient Coin",
+          12
+        ],
+        [
+          "Dragon Scale",
+          5
+        ],
+        [
+          "Empty Wallet",
+          45
+        ],
+        [
+          "Expensive jewel",
+          1
+        ],
+        [
+          "Family Heirloom",
+          8
+        ],
+        [
+          "Forgotten Map",
+          3
+        ],
+        [
+          "Herb Pouch",
+          25
+        ],
+        [
+          "Journal",
+          9
+        ],
+        [
+          "Love Letter",
+          15
+        ],
+        [
+          "Magical Trinket",
+          4
+        ],
+        [
+          "Phone",
+          1
+        ],
+        [
+          "Pocket Knife",
+          20
+        ],
+        [
+          "Poison Vial",
+          2
+        ],
+        [
+          "Potion Kit",
+          5
+        ],
+        [
+          "Rusty Dagger",
+          20
+        ],
+        [
+          "Strange Key",
+          7
+        ],
+        [
+          "Sword",
+          25
+        ],
+        [
+          "Thieves Tools",
+          10
+        ],
+        [
+          "Tool Kit",
+          6
+        ],
+        [
+          "Wand of Healing",
+          1
+        ]
+      ]
+    },
+    "Class Images": {
+      "type": "image_map",
+      "items": [
+        [
+          "Artificer",
+          "artificer.png"
+        ],
+        [
+          "Barbarian",
+          "barbarian.png"
+        ],
+        [
+          "Bard",
+          "bard.png"
+        ],
+        [
+          "Blood Hunter",
+          "bloodhunter.png"
+        ],
+        [
+          "Cleric",
+          "cleric.png"
+        ],
+        [
+          "Commoner",
+          "commoner.png"
+        ],
+        [
+          "Death",
+          "death.png"
+        ],
+        [
+          "Demonhunter",
+          "demonhunter.png"
+        ],
+        [
+          "Druid",
+          "druid.png"
+        ],
+        [
+          "Echo Knight",
+          "echoknight.png"
+        ],
+        [
+          "Fate Weaver",
+          "fateweaver.png"
+        ],
+        [
+          "Fighter",
+          "fighter.png"
+        ],
+        [
+          "Gunslinger",
+          "gunslinger.png"
+        ],
+        [
+          "Monk",
+          "monk.png"
+        ],
+        [
+          "Paladin",
+          "paladin.png"
+        ],
+        [
+          "Ranger",
+          "ranger.png"
+        ],
+        [
+          "Rogue",
+          "rogue.png"
+        ],
+        [
+          "Samurai",
+          "samurai.png"
+        ],
+        [
+          "Sorcerer",
+          "sorcerer.png"
+        ],
+        [
+          "Spellblade",
+          "spellblade.png"
+        ],
+        [
+          "Warlock",
+          "warlock.png"
+        ],
+        [
+          "Wizard",
+          "wizard.png"
+        ]
+      ]
+    },
+    "Genders": {
+      "type": "weighted",
+      "items": [
+        [
+          "Female",
+          50
+        ],
+        [
+          "Male",
+          50
+        ],
+        [
+          "Non-Binary",
+          1
+        ]
+      ]
+    },
+    "Party Relations": {
+      "type": "weighted",
+      "items": [
+        [
+          "Cautious",
+          15
+        ],
+        [
+          "Curious",
+          10
+        ],
+        [
+          "Friendly",
+          20
+        ],
+        [
+          "Helpful",
+          10
+        ],
+        [
+          "Hostile",
+          5
+        ],
+        [
+          "Indifferent",
+          60
+        ],
+        [
+          "Suspicious",
+          10
+        ]
+      ]
+    },
+    "Ages": {
+      "type": "weighted",
+      "items": [
+        [
+          15,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          21,
+          3
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          24,
+          6
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          26,
+          6
+        ],
+        [
+          27,
+          5
+        ],
+        [
+          28,
+          4
+        ],
+        [
+          29,
+          3
+        ],
+        [
+          30,
+          2
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          42,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          45,
+          1
+        ],
+        [
+          46,
+          1
+        ],
+        [
+          47,
+          1
+        ],
+        [
+          48,
+          1
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          1
+        ],
+        [
+          51,
+          1
+        ],
+        [
+          52,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          54,
+          1
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          56,
+          1
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          60,
+          1
+        ]
+      ]
+    }
+  },
+  "outputFolder": "2-World/People/NPC Generation",
+  "imageFolder": "z_Assets/NPC Tokens",
+  "openLocation": "main",
+  "tableOpenLocation": "right",
+  "visibleColumns": [
+    "name",
+    "race",
+    "class",
+    "gender",
+    "age",
+    "alignment",
+    "occupation",
+    "plotRelevance"
+  ],
+  "indexView": "cards",
+  "defaultTemplate": "---\nAssociatedGroup: \nGender: {{gender}}\nRace: {{species}}\nAge: {{age}}\nClass: {{class}}\nAlignment: {{alignment}}\nOccupation: {{occupation}}\nCharacter-Role: \nLocation: \nNoteIcon: npc\nVitality: Alive\nRelevant: Y/N\ntype: npc\ntags:\n  - npc\n  - Category/People\nobsidianUIMode: preview\n---\n\n> [!infobox]\n> # {{first_name}} {{last_name}}\n> ![[{{classImage}}| {{class}} ]]\n> ###### Basic Information\n> Type |  Stat |\n> ---|---|\n> **Home** | `INPUT[text:Location]` |\n> **Group** | `INPUT[text:AssociatedGroup]` |\n> **Occupation** | `VIEW[{Occupation}]` |\n> **Sex** | `VIEW[{Gender}]` |\n> **Race** | `VIEW[{Race}]` |\n> **Age** | `VIEW[{Age}]` |\n> **Condition** | Alive |\n> > ###### Appearance\n> Type |  Stat |\n> ---|---|\n> **Eye Colour** | {{eyeColour}} |\n> **Hair Colour** | {{hairColour}} |\n> **Hair Style** | {{hairStyle}} |\n> ###### Rules Info\n> Type |  Stat |\n> ---|---|\n> **Alignment** | `VIEW[{Alignment}]` |\n> **Class** | `VIEW[{Class}]`  |\n> **Character Role** | `VIEW[{Character-Role}]` |\n\n`BUTTON[DeleteThis]`\n\n# {{first_name}} {{last_name}}\n## Profile\n\n**Personality:** {{personality}}\n**Motivation:** {{motivation}}\n**Distinctive Features:** {{feature}}\n**Description:** You see a {{gender}} {{species}} with {{eyeColour}} eyes and {{hairColour}} hair in a(n) {{hairStyle}} style. They greet you with \"{{dialogueGreeting}}\" with a {{voice}} voice. You also notice they have a distinct {{feature}}.\n\n\n## Backstory\n\n(Insert a backstory here for textgenerator to elaborate upon)\n\n**Occupation:** `VIEW[{Occupation}]` \n\n**Notable History:**  \n- {{randomHistory}}  \n\n**Secret:**  \n- {{randomSecret}}\n\n# Relationships\n## Relationship with NPCs\n- \n## Relationship with Party\n- Initial Attitude: {{disposition}} \n\n**Roleplaying Notes:**  \n- **Voice:** {{voice}}  \n- **Speech Patterns:** {{speechPattern}}  \n- **Common Phrases:**  \n  - \"{{dialogueGreeting}}\"  \n - \"{{dialogueLine}}\"\n\n# Inventory:\n{{#each inventory}}\n- {{this}}\n{{/each}}\n\n# Statblock and Encounters\n> [!info] Statblock\n> ```statblock\n> name: {{first_name}} {{last_name}}\n> monster: Commoner\n> alignment: {{alignment}}\n> traits: {{personality}}, {{feature}}\n> ```\n\n```encounter-table\nname: {{first_name}} {{last_name}}\ncreatures:\n - 1: Commoner\n```"
+}

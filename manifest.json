@@ -1,0 +1,10 @@
+{
+  "id": "ttrpg-npc-generator",
+  "name": "TTRPG NPC Generator",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Generate D&D 5e (or really any TTRPG) NPCs with custom lists, templates, and categories.",
+  "author": "RedReaper21",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
